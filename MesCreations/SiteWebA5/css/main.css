@@ -1,0 +1,1715 @@
+/*----------------------------Contraintes Generales-----------------------------*/
+html {
+    background: silver;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 2000px;
+    min-width: 300px;
+    font-size: 14px;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 140%;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding-bottom: 10%;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 31px;
+    margin-top: 36px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+h1 {
+    color: black;
+    font-weight: 600;
+    line-height: 2;
+    font-size: 350%;
+    border-style: ridge;
+    border-color: darkred;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 20px 0 50px 0 darkslategray;
+    text-shadow: 5px 5px 5px black;
+}
+
+h2 {
+    border-style: outset;
+    border-width: 3px;
+    border-color: rgba(71, 70, 76, 0.38);
+    text-align: center;
+    background-color: rgb(97, 127, 127);
+    box-shadow: 1px 1px 10px 1px black;
+    border-radius: 5px;
+}
+
+section {
+    padding-left: 4%;
+    padding-right: 4%;
+    animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    -webkit-animation: fadein 1.5s;
+    -o-animation: fadein 1.5s;
+    -ms-animation: fadin 1.5s;
+}
+
+article {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 4%;
+    margin-bottom: 4%;
+    text-align: justify;
+    box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.4);
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+    border-left: 5px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+a {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+/*--------------------------Fin Contraintes Generales---------------------------*/
+
+
+
+
+
+
+
+/*------------------------------Page Contact------------------------------------*/
+.formulaire {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.formulaire p {
+    width: 300px;
+    clear: left;
+    margin: 0;
+    padding-left: 155px;
+    border-top: 1px dashed gray;
+    height: 1%
+}
+
+.formulaire label {
+    font-weight: bold;
+    float: left;
+    margin-left: -155px;
+    width: 150px;
+}
+
+.formulaire input {
+    width: 180px;
+}
+
+.formulaire textarea {
+    width: 250px;
+    height: 150px;
+}
+
+.articleContact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.sectionContact {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.msgContact {
+    color: #ed1450;
+    font-weight: 900;
+}
+
+.sectionContactMap {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+iframe {/*---Carte google dans "Contact"---*/
+    float: left;
+}
+
+iframe[name="google_conversion_frame"] {
+    display: none;
+}
+/*------------------------------Fin Page Contact--------------------------------*/
+
+
+
+
+
+
+
+/*----------------------ANIMATIONS FONDU & CLIGNOTEMENTS------------------------*/
+@keyframes {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* Compatibilite Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Compatibilite Safari et Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Compatibilite Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadein {
+    /* Compatibilite IE */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Test {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*-----------------------------FIN DES ANIMATIONS-------------------------------*/
+
+
+
+
+
+
+
+/*---------------------------Nav + Barre de Recherche---------------------------*/
+.lienlogo {/*---Lien du logo Develo'Pont en haut a gauche---*/
+    height: 50px;
+}
+
+.logoDeveloPont {
+    height: 2em;
+    width: 14em;
+    margin: 0.5em 0em 0em -1em;
+    position: relative;
+    left: 2em;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    max-width: 1300px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+}
+
+nav a {
+    align-self: center;
+    letter-spacing: 1.5px;
+    font-size: 17px;
+    font-family: "Lato";
+}
+
+.menuDeroulant {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 65em;
+    margin: 0 0 0 -1px;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    padding: 0 16px;
+    background-color: rgba(33, 60, 69, 0.78);
+    color: black;
+    transition: all 1s;
+    color: white;
+    border-bottom: 5px solid transparent;
+}
+
+.menu:hover {
+    border-bottom: 4px solid white;
+}
+
+.menu:hover ul {
+    position: absolute;
+    max-height: 300px;
+    z-index: 0;
+    top: 50px;
+    animation: fadein 0.2s;
+    border: 1px solid black;
+    border-top: none;
+    color: white;
+}
+
+.sousmenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    max-height: 0;
+    width: 9em;
+    left: -0.05em;
+    top: 50px;
+    overflow: hidden;
+    background-color: rgba(77, 98, 105, 0.95);
+    transition: all 0.1s;
+    box-shadow: none;
+    z-index: -1;
+    padding: 0 10px;
+    text-align: left;
+    border: none;
+    color: white;
+}
+
+.sousmenu:before {
+    position: absolute;
+    height: 10px;
+    width: 9em;
+    left: 0px;
+    background-color: #9ec8b6;
+    padding: 0 10px;
+}
+
+.sousmenu li {
+    list-style: none;
+    color: white;
+}
+
+#sousmenu1 {
+    width: 86.5%;
+}
+#sousmenu2 {
+    width: 105%;
+}
+#sousmenu3 {
+    width: 152%;
+}
+
+.S_MENU {/*---Options liens des sous-menus---*/
+    color: black;
+    font-weight: normal;
+}
+
+.S_MENU:hover {
+    color: white;
+}/*---Fin des options des sous-menus---*/
+/* Menu actif php */
+#en-cours {
+  background-color: rgb(210,229,220);
+}
+
+#en-cours a {
+  color: black;
+}
+
+.menubarre {/*---Barre de Recherche---*/
+    padding: 0 1em;
+    align-self: center;
+}
+
+.barreRecherche {
+    display: inline-flex;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+.search {
+    border-bottom-left-radius: 9px;
+    border-top-left-radius: 9px;
+    background-color: #A2A2A2;
+    border: 2px solid #4C5F67;
+    height: 14px;
+    width: 150px;
+    padding-left: 5%;
+}
+
+.search-btn {
+    background-image: url("../img/favicon.png");
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    position: relative;
+    background-color: #A2A2A2;
+    border: 2px solid #4C5F67;
+    height: 20px;
+    width: 20px;
+}
+/*---Fin Barre de Recherche---*/
+/*--------------------------Fin Nav + Barre de Recherche------------------------*/
+
+
+
+
+
+
+
+/*---------------------------------Footer---------------------------------------*/
+footer {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 1196px;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(33, 60, 69, 0.93);
+    text-align: center;
+    z-index: 999;
+}
+
+#contact {/*---------Contact footer----------*/
+    margin-right : 2%;
+    display: flex;
+    font-size : 15px;
+    align-self: center;
+
+}
+
+.copyright {/*-------Barre du footer--------*/
+    margin-left : 2%;
+    color: white;
+    text-shadow: 0px 2px 6px black;
+    display: flex;
+    font-size: 15px;
+    align-self: center;
+}
+/*---------------------------------Fin Footer-----------------------------------*/
+
+
+
+
+
+
+
+/*---------------------------------Divers---------------------------------------*/
+.span-simplon {/*---Chaine de caracteres "SIMPLON.CO"---*/
+    color: #ed1450;
+    text-shadow: 0px 2px 3px black;
+    font-size: 25px;
+}
+
+.imageDAB {/*---Image Promo sur la page "C'est Quoi ?"---*/
+    max-width: 100%;
+    min-width: 300px;
+    position: relative;
+    width: 60em;
+}
+
+#candidature {/*---Chaine de caracteres "Deposez votre candidature"---*/
+    animation: Test 1s infinite;
+    color: black;
+}
+
+span,
+.liencandidature {/*---Couleur du lien "Deposez votre candidature"---*/
+    color: #ed1450;
+}
+/*---------------------------------Fin Divers-----------------------------------*/
+
+
+
+
+
+
+
+/*--------------------------Logos des partenaires-------------------------------*/
+#royans {
+    width: 230px ;
+}
+
+#massif {
+    width: 250px;
+    position: relative;
+    bottom: 1em;
+}
+
+#leader {
+    width: 150px;
+    position: relative;
+    left: 1.5em;
+    bottom: 1.5em;
+}
+
+#emploi {
+    width: 225px;
+}
+
+#legrand {
+    width: 250px;
+}
+
+#formation {
+    width: 200px;
+}
+
+#vercors {
+    width: 250px;
+    height: 100px;
+    position: relative;
+    left: 2em;
+}
+
+#EPN {
+    width: 250px;
+    position: relative;
+    bottom: 1em;
+}
+
+#marcellin {
+    position: relative;
+    right: 0.8em;
+}
+
+#rhone {
+
+}
+
+#opcalia {
+
+}
+
+#fond_pari {
+
+}
+
+#isere {
+
+}
+
+#GEN {
+
+}
+
+#pont {
+
+}
+
+#EDF {
+
+}
+
+.logo_part1 {
+    margin: 5em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_part2 {
+    margin: 2em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_part3 {
+    margin: 2em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_part4 {
+    margin: 3em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+/*-----------------------Fin des logos partenaires------------------------------*/
+
+
+
+
+
+
+
+
+/*-------------------------Logos des financements-------------------------------*/
+#bpifrance {
+    width: 250px;
+    margin: 0 0 0 0;
+}
+
+#france_active {
+    margin: 0 0 0 2em;
+}
+
+#sncf {
+    width: 400px;
+    margin: 0 0 0 2em;
+}
+
+#UE {
+    width: 250px;
+}
+
+#fse {
+    width: 250px;
+    margin-left: 4em;
+}
+
+#fse2 {
+    width: 250px;
+    margin-left: 4em;
+}
+
+.logo_financement1 {
+    margin: 3em 0 0 2em;
+}
+
+.logo_financement2 {
+    margin: 3em 0 0 4.5em;
+}
+/*-----------------------Fin des logos des financements-------------------------*/
+
+
+
+
+
+
+
+/*--------------------------Page Develo'Pont > L'equipe-------------------------*/
+h4 {
+    text-decoration: underline;
+}
+
+.nom_prenom {
+    margin-top: -0.5em;
+}
+
+.l_equipe {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: -8em 1em 0 1em;
+}
+
+.admin {
+    margin: 9em 28em 0 0;
+}
+
+.formateurs {
+    margin: -61.9em 0 0 35em;
+    text-align: right;
+}
+
+.directeur {
+    text-align: center;
+    margin: 2em 0 -3em 0;
+    position: relative;
+    bottom: 1em;
+}
+
+.mail_equipe {
+    text-shadow: 1px 1px rgba(255, 255, 255, 1);
+    color: rgba(33, 60, 69, 0.78);
+}
+
+.HR_admin {
+    margin-right: 2em;
+}
+
+#HR_formateur {
+    margin-left: 7em;
+    display: none;
+}
+
+#HR_dir {
+    margin-top: 23.5em;
+}
+
+#Line {
+    width: 190px;
+    height: 210px;
+}
+
+#Chloe {
+    width: 180px;
+    height: 195px;
+}
+
+#Charlene {
+    width: 180px;
+    height: 195px;
+}
+
+#Arnaud {
+    width: 190px;
+    height: 205px;
+}
+
+#Jerome {
+    width: 190px;
+    margin-top: 3.3em;
+    height: 205px;
+}
+/*---------------------Fin de la page Develo'Pont > L'equipe--------------------*/
+
+
+
+
+
+
+
+/*----------------------------Page "C'est ou ?"---------------------------------*/
+.PONTENROYANS {/*---Titre PONT EN ROYANS---*/
+    color: black;
+    font-size: 200%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.LIENCESTOU {/*---Lien Pont en Royans, Commune, Auvergne-Rhone-Alpes---*/
+    color: black;
+    font-size: 100%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.imagemaisonsuspendu {
+    height: 185px;
+    width: 260px;
+    float: right;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 40px;
+    -webkit-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -moz-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -ms-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -o-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+}
+
+.imagemaisonsuspendu:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.imagemaisonsuspendu:not(:hover) {
+    -webkit-filter: grayscale(1) blur(0.5px);
+    -moz-filter: grayscale(1) blur(0.5px);
+    -ms-filter: grayscale(1) blur(0.5px);
+    -o-filter: grayscale(1) blur(0.5px);
+    filter: grayscale(1) blur(0.5px);
+}
+
+.imagepont1800 {
+    height: 185px;
+    width: 260px;
+    float: left;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    -webkit-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -moz-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -ms-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -o-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+}
+
+.imagepont1800:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.imagepont1800:not(:hover) {
+    -webkit-filter: grayscale(1) blur(0.5px);
+    -moz-filter: grayscale(1) blur(0.5px);
+    -ms-filter: grayscale(1) blur(0.5px);
+    -o-filter: grayscale(1) blur(0.5px);
+    filter: grayscale(1) blur(0.5px);
+}
+
+.sitegeologiques,
+.histoire,
+.pont {
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+}
+
+.clochet {
+    height: 185px;
+    width: 260px;
+    float: left;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    -webkit-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -moz-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -ms-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -o-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+}
+
+.clochet:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.clochet:not(:hover) {
+    -webkit-filter: grayscale(1) blur(0.5px);
+    -moz-filter: grayscale(1) blur(0.5px);
+    -ms-filter: grayscale(1) blur(0.5px);
+    -o-filter: grayscale(1) blur(0.5px);
+    filter: grayscale(1) blur(0.5px);
+}
+
+.museedeleau {
+    height: 185px;
+    width: 260px;
+    float: right;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 40px;
+    -webkit-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -moz-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -ms-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -o-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+}
+
+.museedeleau:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.museedeleau:not(:hover) {
+    -webkit-filter: grayscale(1) blur(0.5px);
+    -moz-filter: grayscale(1) blur(0.5px);
+    -ms-filter: grayscale(1) blur(0.5px);
+    -o-filter: grayscale(1) blur(0.5px);
+    filter: grayscale(1) blur(0.5px);
+}
+
+.grotte {
+    height: 185px;
+    width: 260px;
+    float: left;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    -webkit-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -moz-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -ms-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -o-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+}
+
+.grotte:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.grotte:not(:hover) {
+    -webkit-filter: grayscale(1) blur(0.5px);
+    -moz-filter: grayscale(1) blur(0.5px);
+    -ms-filter: grayscale(1) blur(0.5px);
+    -o-filter: grayscale(1) blur(0.5px);
+    filter: grayscale(1) blur(0.5px);
+}
+
+.monuments {
+    padding-bottom: 100px;
+}
+
+.gorgebourne {
+    height: 185px;
+    width: 260px;
+    float: right;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 40px;
+    -webkit-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -moz-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -ms-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    -o-transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+    transition: all .3s cubic-bezier( .4, 2, .3, 0.2);
+}
+
+.gorgebourne:hover {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+.gorgebourne:not(:hover) {
+    -webkit-filter: grayscale(1) blur(0.5px);
+    -moz-filter: grayscale(1) blur(0.5px);
+    -ms-filter: grayscale(1) blur(0.5px);
+    -o-filter: grayscale(1) blur(0.5px);
+    filter: grayscale(1) blur(0.5px);
+}
+
+article h3 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    display: inline-table;
+}
+/*---------------------------Fin Page "C'est ou ?"------------------------------*/
+
+
+
+
+
+
+
+/*------------------------------Page Promo 2017---------------------------------*/
+.PROMO {
+    position: relative;
+    left: 1em;
+}
+
+.PROMO li {
+    display: inline-table;
+    position: relative;
+    left: -3.2em;
+    width: 11em;
+    height: 11em;
+    margin-right: 0em;
+    list-style: none;
+    padding-left: 2em;
+    padding-right: 0.45em;
+    padding-top: 3em;
+}
+
+.PROMO li a {
+    position: absolute;
+    display: inline-block;
+    overflow:hidden;
+    width: 11em;
+    height: 11em;
+    margin-top:0em;
+    margin-left:0em;
+    border:0.3em solid rgba(0,0,0,0.7);
+    border-radius: 0.5em;
+    transition-property: width, height, margin, z-index, border;
+    transition-duration: 0.4s;
+    -webkit-transition-property: width, height, margin, z-index, border;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-property: width, height, margin, z-index, border;
+    -moz-transition-duration: 0.4s;
+    -o-transition-property: width, height, margin, z-index, border;
+    -o-transition-duration: 0.4s;
+}
+
+.PROMO li a:hover {
+    position:absolute;
+    width: 15em;
+    height: 15em;
+    margin-top: -2em;
+    margin-left: -2em;
+    margin-right: 5em;
+    border: 6px solid rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+.PROMO li a img {
+    opacity: 1;
+    position:absolute;
+    width: 11em;
+    height: 11em;
+    border-radius: 0.2em;
+    transition-property: width, height, z-index;
+    transition-duration: 0.4s;
+    -webkit-transition-property: width, height, z-index;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-property: width, height, z-index;
+    -moz-transition-duration: 0.4s;
+    -o-transition-property: width, height, z-index;
+    -o-transition-duration: 0.4s;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    z-index: 20;
+}
+
+.PROMO li a:hover img {
+    width: 15em;
+    height: 15em;
+    z-index: 100;
+}
+
+.PROMO li a .prenom_ {
+    position: absolute;
+    text-align: center;
+    bottom: -100px;
+    opacity: 0;
+}
+
+.PROMO li a:hover .prenom_ {
+    opacity: 1;
+    bottom: 0em;
+    left:-0.9em;
+    transition:bottom 0.4s ease 0.4s;
+    -webkit-transition:bottom 0.3s ease 0.4s;
+    -moz-transition:bottom 0.3s ease 0.4s;
+    -o-transition:bottom 0.3s ease 0.4s;
+    width:16.9em;
+    height: 2.5em;
+    padding-bottom:1em;
+    background:rgba(0,0,0,0.8);
+    margin-top:-90px;
+    z-index:150;
+}
+/*--------------------------Fin de la page 'Promo 2017'-------------------------*/
+
+/*debut fonction.php pour integrer les infos perso de chaque personnes de la promo 2017 */
+
+.tableauinfos h1 {
+   border: medium none;
+    box-shadow: none;
+    color: green;
+
+}
+
+.tableauinfos h2 {
+      background-color: transparent;
+    border: medium none;
+    box-shadow: none;
+    color: blue;
+}
+
+
+.tableauinfos {
+   border: 1px solid black;
+    margin: 10px;
+    background-color: aliceblue;
+}
+
+
+.bodyFonction {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+/*-----------------------------Barre Reseaux Sociaux----------------------------*/
+.reseauxsociaux {
+	width: 4.2277%;
+    max-width: 75px;
+    min-width: 45px;
+    height: calc((275*100)/939);
+    position: fixed;
+    margin-left: -15.7182%;
+
+    background-color: rgba(0, 0, 0, 0.80);
+    border-radius: 5px;
+    z-index: 10;
+    top: 18em;
+    flex-flow: row wrap;
+    min-width: 75px;
+    position: fixed;
+    margin: 0 auto;
+    left: 15px;
+}
+
+.social {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#twittericon {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: auto;
+    width: 56%;
+    height: 12%;
+}
+
+#fbicon {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: auto;
+    width: 56%;
+    height: 12%;
+}
+
+#googleicon {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: auto;
+    width: 56%;
+    height: 12%;
+}
+
+#inicon {
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: auto;
+    width: 56%;
+    height: 12%;
+}
+/*-------------------------Fin Barre Reseaux Sociaux----------------------------*/
+
+
+
+
+
+
+
+
+/*----------------------------Page "Attente.php"--------------------------------*/
+.dd {
+    height: 12em;
+    width: 12em;
+}
+/*---------------------------Fin Page "Attente.php"-----------------------------*/
+
+/*-------- galerie photo
+#ranger {
+    position: relative;
+    top: 2em;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#imgdex img {
+    width: 100%;
+}
+#imgdex {
+	position: relative;
+	perspective: 200em;
+	padding-top: 60%;
+	transform-style: preserve-3d;
+}
+#imgdex figure, #imgdex figure figcaption {
+	position: absolute;
+	transition: 1s ease-in-out;
+}
+#imgdex figure {
+	top: 3em;
+	left: 6.5em;
+	transform-origin: bottom;
+	width: 70%;
+}
+#imgdex figure figcaption {
+	bottom: 19.3em;
+	font-size: 2rem;
+	left: 10.5em;
+	opacity: 0;
+	color: rgb(212, 21, 75);
+}
+#imgdex figure:last-of-type {
+	transform: rotateX(5deg);
+	box-shadow: 0px 0px 200px rgba(0,0,0,0.5);
+}
+
+.couleur_galerie {
+    background-color: rgba(35, 30, 30, 0.68);
+}
+------------------------Fin Page Galerie Photo------------------------------*/
+
+
+
+/*-----------------------Simplon.co --> Simplon en chiffres---------------------*/
+.chiffres, .h3chiffres {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 130%;
+}
+
+
+.chiffresCles, .entreeFormation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 80px;
+    font-weight: 900;
+}
+
+
+.h3chiffres {
+    font-size: 200%;
+    text-decoration: underline;
+
+}
+
+
+.chiffresPair {
+    align-self: flex-end;
+
+}
+
+
+.chiffresImpair {
+    align-self: flex-start;
+}
+
+
+.valeur {
+    color: #ed1450;
+    font-size: 250%;
+}
+
+
+#progress7 {
+    margin-right: -21em;
+}
+/*-----------------fin de Simplon.co --> Simplon en chiffres--------------------*/
+
+
+/*-------------------------Responsive--------------------------------------------*/
+
+@media screen and (max-width: 425px) {
+
+    nav {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .menuDeroulant {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .logoDeveloPont {
+        left: 0;
+    }
+
+    /*------------------------------Page c'est ou? ---------------------------------- */
+
+    .imagepont1800, .imagemaisonsuspendu, .clochet, .museedeleau, .grotte, .gorgebourne {
+        height: 100px;
+        width: auto;
+    }
+
+    .PONTENROYANS {
+        font-size: 170%;
+    }
+
+    /*------L'Ã©quipe--------*/
+
+    .l_equipe, .admin, .formateurs, #HR_dir, .directeur {
+        margin: 0;
+    }
+
+    /*-------Partenaires, qui finance---------*/
+
+    .logo_financement1, .logo_financement2, .logo_part1, .logo_part2, .logo_part3 {
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    #bpifrance, #france_active, #sncf, #UE, #fse, #fse2, #EPN, #royans, #leader, #vercors, #massif, #emploi, #legrand, #formation  {
+        margin: auto;
+        width: 300px;
+        align-self: center;
+    }
+
+    /*-----------en chiffres----*/
+
+    #progress7 {
+        margin: 0;
+    }
+
+    .valeur {
+        font-size: 170%;
+    }
+
+    /*---------------Contact-----------*/
+
+    textarea {
+        width: 300px;
+    }
+
+    iframe {
+        width: 300px;
+    }
+
+    .h3chiffres {
+        font-size: 180%;
+    }
+
+    .chiffresPair p, .chiffresImpair p, .chiffresCles, .entreeFormation {
+        line-height: normal;
+    }
+
+    /*----------------PROMO 2017 --------------*/
+    .PROMO {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        margin: 0;
+    }
+
+
+
+
+
+    /*---------Galerie--------
+    #imgdex figure {
+        top: 0em;
+        left: 0em;
+        width: auto;
+    }
+
+    #ranger {
+        top: 1em;
+        width: 81%;
+    }
+
+    #imgdex figure figcaption {
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 830px) {
+
+    nav {
+        flex-flow: column nowrap;
+        position: relative;
+    }
+
+    body {
+        padding-top: 0;
+    }
+
+    section {
+        padding: 0;
+    }
+    -------------*/
+    /*-------Menu Deroulant--------*/
+    .menuDeroulant {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0;
+        color: white;
+    }
+
+
+    .menu {
+        display: flex;
+        list-style-type: none;
+        position: relative;
+        padding: 0 16px;
+        box-shadow: 0 0 1px black;
+        background-color: rgba(33, 60, 69, 0.78);
+        color: black;
+        transition: all 1s;
+        color: white;
+        border-bottom: 5px solid transparent;
+    }
+
+    .sousmenu {
+        flex-direction: column;
+        position: absolute;
+        max-height: 0;
+        width: 9em;
+        left: 160px;
+        top: 50px;
+        overflow: hidden;
+        background-color: rgba(77, 98, 105, 0.89);
+        transition: all 0.1s;
+        box-shadow: none;
+        padding: 0 10px;
+        text-align: left;
+        border: none;
+        color: white;
+    }
+
+    .sousmenu:before {
+        position: absolute;
+        height: 10px;
+        width: 9em;
+        left: 0px;
+        background-color: #9ec8b6;
+        padding: 0 10px;
+    }
+
+    #sousmenu1 ,#sousmenu2, #sousmenu3 {
+        width: auto;
+    }
+
+    .sousmenu li {
+        list-style: none;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .menu:hover ul {
+        position: absolute;
+        max-height: 300px;
+        z-index: 3;
+        top: 50px;
+        left: 160px;
+        animation: fadein 0.2s;
+        border: 1px solid black;
+        border-top: none;
+        color: white;
+    }
+
+    .menu:hover {
+        border-bottom: 5px solid white;
+    }
+    /*--------Fin du menu------*/
+
+
+
+
+    .logo img {
+        display: none;
+    }
+
+    section {
+        top: 500px;
+    }
+
+
+
+
+    /*-------Contact footer--------*/
+    #contact {
+    margin: 0;
+    justify-content: flex-end;
+    display: flex;
+    }
+
+    footer {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    max-width: 1196px;
+    position: relative;
+    bottom: 0;
+    background-color: rgba(33, 60, 69, 0.93);
+    z-index: 0;
+    font-size: 0.5em;
+    }
+
+    footer p {
+        align-self: center;
+    }
+
+}
+
+@media screen and (max-width: 1120px) {
+
+    .reseauxsociaux {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .menuDeroulant {
+        display: flex;
+        order: 1;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .menu:hover ul {
+        top: 30px;
+    }
+
+    .menubarre {
+        display: none;
+    }
+}
+/*-------------------------------Fin Responsive---------------------------------*/
+
+
+/* debut Admin News */
+
+
+.phpNews {
+       margin: 10px;
+        padding-bottom: 15px;
+}
+
+.h2news {
+    color: #ed1450;
+    font-size: 180%;
+    font-style: italic;
+    font-weight: 900;
+
+}
+
+.sectionNews {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.signature {
+    font-style: italic;
+}
+
+.pNews {
+     border: 1px solid rgb(97, 127, 127);
+    font-size: 110%;
+    font-style: normal;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/* fin admin news */
+
+/*-----------------------------Programme Page "C'est quoi"----------------------*/
+
+.Module-Tableau-container{
+	margin-left: 1em;
+	margin-right: 1em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	font-size: 97%;
+}
+
+.Module-Tableau-green{
+	background-color:rgba(33,60,69,1);
+
+}
+
+.Module-Tableau-bar{
+	margin-left: 1em;
+    margin-right: 1em;
+    box-shadow: none;
+    position: relative;
+    top: 2.4em;
+    height: 0.9em;
+    border: none;
+}
+
+.Module-Tableau-bar-item {
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif !important;
+    font-weight: bold;
+}
+
+.Module-Tableau-button{
+	border: none;
+	background-color:rgba(97,127,27,0.0);
+    color: aliceblue;
+	padding:2.35%;
+	text-decoration: none;
+    position: relative;
+    right: 3em;
+    height: 344%;
+    margin-left: -0.2%;
+}
+
+.Module-Tableau-border{
+	border: 1px solid rgba(51,51,51,.3);
+    box-shadow: none;
+}
+
+.Module-Tableau-activ{
+	background-color:rgba(97,127,127,1);
+	color: rgb(51,51,51);
+	outline:none;
+}
+
+.title_color {
+    text-decoration: underline;
+}
+
+/*------------------------Fin Programme Page "C'est quoi"-----------------------*/
+
+/*------------------------------Page EPN----------------------------------------*/
+
+.img_date {
+    position: absolute;
+    height: 50%;
+}
+
+.text_epn_histoire {
+    padding-left: 12%;
+}
+
+/*------------------------------Page EPN----------------------------------------*/
+
+
+
+/*â†‘â†‘SI VOUS DEVEZ AJOUTER DES CHOSES SUR LE CSS CODEZ EN DESSUS DE CETTE LIGNEâ†‘â†‘*/
+/*---------------------------Galerie TEST---------------------------------------*/
+.galeriePhoto {
+    position: relative;
+    top: 2em;
+}
+
+.galeriePhoto:hover {
+    
+}
+
+.slides {
+    width: 100%;
+    -moz-animation: fadein 0.5s;
+    -webkit-animation: fadein 0.5s;
+    -o-animation: fadein 0.5s;
+    -ms-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+}
+
+figure {
+    border: 5px solid rgba(33, 60, 69, 0.78);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.6 );
+}
+
+.left_button {
+    color:aliceblue;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 4em;
+    position: absolute;
+    top: 47%;
+    width: 3em;
+    height: 4em;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    left: -2%;
+}
+
+.right_button {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 4em;
+    position: absolute;
+    top: 47%;
+    width: 3em;
+    height: 4em;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    right: -2%;
+}
+
+.left_button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    animation-name: left_right;
+    -moz-animation: fadein 0.3s;
+    -webkit-animation: fadein 0.3s;
+    -o-animation: fadein 0.3s;
+    -ms-animation: fadein 0.3s;
+     animation: fadein 0.3s;
+}
+
+.right_button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    animation-name: left_right;
+    -moz-animation: fadein 0.3s;
+    -webkit-animation: fadein 0.3s;
+    -o-animation: fadein 0.3s;
+    -ms-animation: fadein 0.3s;
+     animation: fadein 0.3s;
+}
+
+.temoignage a:link, .temoignage i a:link {
+    color: #ed1450;
+}
+
+.temoignage a, .temoignage i {
+    position: relative;
+    top: 17em;
+    right: 14.4em;
+    font-size: 89%;
+}
+
+.video_temoignage {
+    position: relative;
+    left: 13.5em;
+}
+/*-----------------------Fin Galerie TEST--------------------------------------*/

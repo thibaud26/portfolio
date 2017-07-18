@@ -1,0 +1,200 @@
+/*
+ * {
+
+  border: 1px solid black;
+  
+  met les bordures pour verifier tous les paragraphes 
+}
+*/
+h1
+{
+  text-transform: uppercase;
+ font-size: 250%;
+ color: #EAEFF0;
+ text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+        height:auto;
+	width: auto;
+	background:#069;
+  text-align: center;
+  z-index:9998;
+  font-family: "Apple Chancery", cursive;
+  border: 1px solid black;
+  color: black;
+}
+
+
+
+h2 
+{
+  color: #EAEFF0;
+  border-style : double;
+  text-decoration: underline; /* sert a souligner les h2 et h1 */
+  font-style: italic;
+  font-weight: bold; 
+	height:auto;
+	width: auto;
+	background:#069;
+  text-align: center;
+  z-index:9998;
+  font-family: "Apple Chancery", cursive;
+  border: 1px solid black;
+  color: black;
+  /*margin-left: 200px;*/
+}
+
+
+
+.wrapper 
+{
+    margin: 0 auto;
+    max-width: 2000px;
+    min-width: 300px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.adresse div
+{
+  display: inline-block;
+  vertical-align: middle;
+ 
+}
+
+
+
+.coordonnes 
+{
+  font-family: arial , sans-serif;
+  font-size: 20px;
+  padding: 20px 20px 20px 20px;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 30px;
+  margin: 0 auto;
+} 
+
+
+
+.coordonnes img, .adresse img
+{
+  height: 20px;
+  max-width: 100%;
+  display: inline-block; /* pour l'image s'aligne sur le texte */
+  vertical-align: middle; /* pour que l'image soit au milieu de la ligne */
+}
+
+
+
+.policedeveloppeur
+{
+  font-family: "Apple Chancery", cursive;
+  font-size: 50px;
+  color: black;
+  display: block;
+}
+
+
+
+p 
+{ 
+  line-height: 10px;
+  text-align: right;
+}
+
+
+
+header 
+{ 
+  text-align: center;
+  font-size: 2em;
+}
+
+
+
+.image
+{
+  float: left;
+  left: 20px;
+  width: 210 px;
+  height: 200px;
+  z-index: 9990;
+  border: 2px solid black;
+  border-radius: 20%;
+  /*opacity: 1;
+   pour l'opacité de l'image*/
+}
+
+
+
+.textCentral 
+{
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+}
+
+
+a:hover span, a:focus span /* hover quand tu passe le souris dessus et focus permet de cibler avec le clavier */
+{
+  transform: scale(0.9) rotate(0);
+  opacity: 0.9;
+  box-shadow: 10px 10px 10px black;
+}
+
+
+
+a span
+{
+  cursor: pointer; /* On change le curseur par défaut par un autre curseur. */
+  color: black;
+  background: #069;
+  border: 2px solid black;
+  font-style: italic;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black; /* met de l'ombre sur la bulle */
+  position: absolute;
+  margin-top: 23px;
+  margin-left: -35px;
+  transform: scale(0) rotate(-12deg);
+  transition: all .25s 0.10s;
+  opacity: 0;
+}
+  
+  
+   
+strong 
+{
+    font-weight: bolder;
+}
+  
+  
+  
+  
+body 
+{
+    background-color: #EAEFF0;
+}
+
+
+
+ul 
+{    
+     margin: 10px;
+     text-align: left;
+
+      font-weight: 700;
+}
+
+
+
+ul li ul li /* les li qui sont dans les ul, des li, des ul */
+{
+      font-weight: 400;
+      list-style-type: square; /* carré a gauche des phrases */
+      padding-right: 15px;
+}
