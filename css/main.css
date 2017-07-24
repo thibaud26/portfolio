@@ -88,7 +88,7 @@ footer {
     left: 0;
     right: 0;
     background-color: aqua;
-    display: block;
+    position: absolute;
     height: 12.5em;
     width: 100%;
     clear: both; /* sert a mettre le footer en bas */
