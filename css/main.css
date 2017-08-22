@@ -29,14 +29,20 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    background-image: url(../images/ecranfond.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 2000px;
+    min-width: 300px;
 	line-height: 1;
     font-size: 1em;
     height: 100%;
     width: 100%;
-    background-color: chartreuse;
     margin: 0;
     padding: 0;
     min-height: 100%;
+    color: white;
 }
 ol, ul {
 	list-style: none;
@@ -53,34 +59,127 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
 /* fin du reset = structure de base du css */
 
+
+.titre {
+    font-size: 4em;
+}
+
+.menu {
+    
+}
+
+
+a:visited {
+    color: gray;
+}
+
+
+a:hover {
+    color: red;
+}
+s
+
+a:active {
+    color: red;
+}
+
+
+a:link {
+    text-decoration: none;
+    color: chartreuse;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 900;
+    
+}
+
 .header {
-    background-color: blueviolet;
     width: 100%;
-    height: 12.5em;
-    display: block; /* sert a créer des blocks */
+    display: flex; 
     top: 0;
+    justify-content: center;
 }
 
 
 .warpper {
-    background-color: yellow;
-    width: 80%;
-    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-		flex-flow: column;
-    right: 0;
+    flex-flow: column nowrap;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 8%;
 }
+
+.photohaut{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.photobas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.photocv {
+    width: 12em;
+    padding-right: 1em;
+}
+
+
+.photodev {
+    width: 12em;
+}
+
+
+.photositeperso {
+    width: 12em;
+    padding-right: 1em;
+}
+
+
+.photoreseau {
+    width: 12em;
+}
+
 
 
 .aside-left {
     float: left; /* sa colle le aside directmeent a gauche */
-    width: 20%;
-    background-color: blue;
-    display: block;
-    height: 100%;
-    left: 0;
+    background: black none repeat scroll 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 125%;
+    letter-spacing: 1px;
+    max-width: 16em;
+    opacity: 0.9;
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+
+
+.photo {
+    width: 10em;
+    border: 1px solid black;
+    border-radius: 5em;
+}
+
+
+.prenom {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: underline;
 }
 
 
@@ -88,9 +187,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: aqua;
-    position: absolute;
-    height: 12.5em;
+    height: 8.5em;
     width: 100%;
     clear: both; /* sert a mettre le footer en bas */
 }
