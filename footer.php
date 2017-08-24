@@ -1,0 +1,1 @@
+<p>COPYRIGHT © 2017 Thibaud Bousquainaud, TOUS DROITS RÉSERVÉS</p>
