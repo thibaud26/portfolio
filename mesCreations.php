@@ -11,12 +11,60 @@
             
             <h1 class="titre">PORTFOLIO</h1>
             
-          
                         <nav>
                             <?php include ('menu.html'); ?>
                         </nav>
           
             </header>
+        
+<aside class="aside-leftCreations">  
+    
+    <header>
+    
+        <img class="photo" src="images/Thib.png" alt="photo">
+            <section class="prenom">
+                <h1>Thibaud</h1>
+                <h1>Bousquainaud</h1>
+            </section>
+                    
+    </header>
+    
+<section>
+
+
+        <h3 class="h3competences">Compétences : </h3>
+        <div class = "competences">
+            <div class = "licompetences">
+
+
+        <li>Html5: </li>
+        <li>Css3: </li>
+        <li>Php: </li>
+        <li>Javascript: </li>
+        <li>Linux: </li>
+        <li>GIT:</li>
+        <li>SCRUM: </li>
+
+        </div>
+
+        <div class = "liprogress">
+
+        <progress max="100" value="90" form="form-id">90%</progress>
+        <progress max="100" value="90" form="form-id">90%</progress>
+        <progress max="100" value="50" form="form-id">50%</progress>
+        <progress max="100" value="50" form="form-id">50%</progress>
+        <progress max="100" value="70" form="form-id">70%</progress>
+        <progress max="100" value="90" form="form-id">90%</progress>
+        <progress max="100" value="90" form="form-id">90%</progress>
+
+        </div>
+
+                 </div>
+
+</section>
+</aside>
+
+        
 
 <main class="warpper">
     
