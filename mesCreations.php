@@ -67,9 +67,8 @@
         
 
 <main class="warpper">
-    
             
-    <div class="photohaut">
+    <div class="photohaut"> 
 	<section><p><a class="hvr-float-shadow"
                    href="../DossierCV/cvthibaud.php">
                    <img class="photocv" src="images/ecrancv.png" alt="cv"/>

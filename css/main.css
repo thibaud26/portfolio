@@ -207,16 +207,15 @@ a:link {
 progress {
     background: black none repeat scroll 0 0;
     border: 1px solid black;
-    border-radius: 14px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
     width: 8em;
+    
 }
 
 
 
 progress::-moz-progress-bar {
    background: olivedrab;
-   border-radius: 12px;
    box-shadow: inset 0 -2px 4px rgba(0,0,0,0.4),
                0 2px 5px 0px rgba(0,0,0,0.3);
 }
@@ -242,7 +241,7 @@ progress::-moz-progress-bar {
 .photohaut{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-left: 4em;
     padding-bottom: 2em;
 }
@@ -251,7 +250,7 @@ progress::-moz-progress-bar {
 .photobas {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-left: 4em;
 }
 
