@@ -9,7 +9,7 @@
     
             <header class="header">
             
-            <h1 class="titre">PORTFOLIO</h1>
+            <h1 class="titre">Portfolio</h1>
             
                         <nav>
                             <?php include ('menu.html'); ?>

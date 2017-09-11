@@ -133,18 +133,18 @@ a:visited {
 
 
 a:hover {
-    color: red;
+    color: white;
 }
 s
 
 a:active {
-    color: red;
+    color: white;
 }
 
 
 a:link {
     text-decoration: none;
-    color: chartreuse;
+    color: white;
     font-size: 1.5em;
     font-style: italic;
     font-weight: 900;
@@ -175,6 +175,7 @@ a:link {
     font-size: 30px;
     margin: 3px;
     width: 50px;
+    position: fixed;
 }
 
 .asideCache {
@@ -385,18 +386,110 @@ progress::-moz-progress-bar {
 }
 
 
-footer {
-    background-color: black;
-    text-align: center;
+/****************** A Propos *******************/
+
+
+.photoAPropos{
+    width: 20em;
     display: flex;
     align-self: center;
-    justify-content: space-around;
-    height: 40px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+    border: 1px solid black;
+    border-radius: 6em;
+    margin: 10px;
+    width: 12em;
+}
+
+
+.prenomAPropos {
+    font-size: 5em;
+    font-weight: 900;
+    margin: 1.5em;
+    background-color: black;
     opacity: 0.9;
-    left: 0;
-    right: 0;
+}
+
+
+.devAPropos {
+    font-size: 2em;
+    font-weight: 300;
+    font-style: oblique;
+    margin: 7px;
+}
+
+
+.textAPropos {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5em;
+    font-style: italic;
+    font-weight: bold;
+    max-width: 300px;
+    letter-spacing: 2px;
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+.aPropos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/****************** Fin A Propos *******************/
+
+
+/******************  Contact *******************/
+
+
+
+.textContact {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0 auto;
+    max-width: 1000px;
+    opacity: 0.9;
+}
+
+
+
+/******************  Fin Contact *******************/
+
+footer {
+    background-color: black;
+    bottom: 0;
     clear: both;
-}   
+    display: flex;
+    height: 10%;
+    left: 0;
+    line-height: 35px;
+    opacity: 0.9;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+} 
+
+
+footer p {
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.logoFooter {
+    width: 40%;
+}
+
+
+.footerLiens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}

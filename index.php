@@ -10,7 +10,10 @@
         
         <header class="header">
             
-            <h1 class="titre">Portfolio</h1>
+            
+             <h1 class="titre">Sur Mon Portfolio</h1>
+            <h1 class="titre">Bienvenue</h1>
+            
             
           
                         <nav>
