@@ -161,13 +161,36 @@ a:link {
 }
 
 
+.aside-leftCreations header {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+.boutonCache {
+    align-self: flex-end;
+    background-color: black;
+    border: medium none;
+    color: white;
+    font-size: 30px;
+    margin: 3px;
+    width: 50px;
+}
+
+.asideCache {
+    overflow: hidden;
+    left: -15em;
+    height: 3em !important;
+}
+
+
 .warpper {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
-    font-size: 2em;
+    font-size: 200%;
     text-align: center;
     margin-top: 8%;
 }
@@ -346,9 +369,11 @@ progress::-moz-progress-bar {
 
 
 .photo {
-    width: 10em;
+    align-self: center;
     border: 1px solid black;
-    border-radius: 5em;
+    border-radius: 6em;
+    margin: 10px;
+    width: 12em;
 }
 
 

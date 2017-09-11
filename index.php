@@ -10,7 +10,7 @@
         
         <header class="header">
             
-            <h1 class="titre">PORTFOLIO</h1>
+            <h1 class="titre">Portfolio</h1>
             
           
                         <nav>
@@ -35,6 +35,11 @@
         
         </aside>
         
+        <aside class="aside-right">
+        
+        
+        
+        </aside>
    
         
         <footer>

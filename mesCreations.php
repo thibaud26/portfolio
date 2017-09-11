@@ -20,6 +20,9 @@
 <aside class="aside-leftCreations">  
     
     <header>
+        
+        <button onclick="hideAside()" class="boutonCache"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
     
         <img class="photo" src="images/Thib.png" alt="photo">
             <section class="prenom">
