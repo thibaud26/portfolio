@@ -94,6 +94,14 @@
                     <img class="photoreseau" src="images/ecranreseausocial.png" alt="site reseau social"/>
     </a></p></section>
     </div>
+    
+    <div class="photoBas2">
+	<section><p><a class="hvr-float-shadow"
+                   href="../moteurrecherchemusiques/index.html">
+                    <img class="photositemusique" src="images/photositemusique1.png" alt="site musique"/>
+	</a></p></section>
+        
+    </div>
             
         </main>
         

@@ -65,8 +65,10 @@ table {
 
 
 .titre {
+    font-family: "Monoton",cursive;
     font-size: 7em;
-    font-family: 'Monoton', cursive;
+    letter-spacing: 6px;
+    line-height: 2em;
     padding-top: 0.5em;
     
 }
@@ -300,6 +302,11 @@ progress::-moz-progress-bar {
 
 .photoreseau {
     width: 10em;
+}
+
+.photositemusique {
+    width: 10em;
+    padding-top: 2em;
 }
 
 
