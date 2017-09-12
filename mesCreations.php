@@ -77,8 +77,7 @@
                    <img class="photocv" src="images/ecrancv.png" alt="cv"/>
     </a></p></section>
 
-	<section><p><a class="hvr-float-shadow"
-                   href="../travailA5/accueil/accueil.php">
+	<section><p><a class="hvr-float-shadow" href="../travailA5/accueil/accueil.php">
                     <img class="photodev" src="images/ecransitedev.png" alt="site developont"/>
 	</a></p></section>
     </div>

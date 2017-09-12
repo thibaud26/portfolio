@@ -33,16 +33,17 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 2000px;
-    min-width: 300px;
-	line-height: 1;
-    font-size: 1em;
-    height: 100%;
+    /* max-width: 2000px; */
+    /* min-width: 300px; */
+    /* line-height: 1; */
+    /* font-size: 1em; */
+    height: auto;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    /* padding: 0; */
     min-height: 100%;
     color: white;
+    position: absolute;
 }
 ol, ul {
 	list-style: none;
@@ -66,10 +67,24 @@ table {
 
 .titre {
     font-family: "Monoton",cursive;
-    font-size: 7em;
+    font-size: 6em;
     letter-spacing: 6px;
     line-height: 2em;
     padding-top: 0.5em;
+    max-width: 42%;
+    height:auto;
+    width: auto;
+}
+
+
+.titre2 {
+    font-family: "Monoton",cursive;
+    font-size: 6em;
+    letter-spacing: 6px;
+    line-height: 2em;
+    max-width: 42%;
+    height:auto;
+    width: auto;
     
 }
 
@@ -83,6 +98,7 @@ table {
 #onglets {
     display: flex;
     flex-direction: row;
+    margin-left: 5em;
 }
 
 
@@ -194,7 +210,7 @@ a:link {
     display: flex;
     flex-flow: column nowrap;
     font-size: 200%;
-    text-align: center;
+    text-align: right;
     margin-top: 8%;
 }
 
@@ -268,45 +284,51 @@ progress::-moz-progress-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-left: 4em;
     padding-bottom: 2em;
+    margin-right: 1em;
 }
 
 
 .photobas {
     display: flex;
     flex-direction: row;
+    justify-content: space-around; 
+    margin-right: 1em;
+}
+
+
+.photoBas2 {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    padding-left: 4em;
+    padding-top: 2em;
+    margin-right: 1em;
 }
 
 
 .photocv {
-    width: 10em;
-    padding-left: 2em;
+    width: 60%;
    
 }
 
 
 .photodev {
-    width: 10em;
+    width: 60%;
 }
 
 
 .photositeperso {
-    width: 10em;
-    padding-left: 2em;
+    width: 60%;
     
 }
 
 
 .photoreseau {
-    width: 10em;
+    width: 60%;
 }
 
 .photositemusique {
-    width: 10em;
-    padding-top: 2em;
+    width: 30%;
 }
 
 
@@ -365,7 +387,7 @@ progress::-moz-progress-bar {
     background: black none repeat scroll 0 0;
     display: flex;
     flex-flow: column nowrap;
-    height: 132%;
+    height: 100%;
     letter-spacing: 1px;
     max-width: 16em;
     opacity: 0.9;
@@ -499,4 +521,47 @@ footer p {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0 auto;
+}
+
+/*@media screen and (max-width: 1300px) {
+    .photohaut, .photobas {
+        padding-left: 10em;
+    }
+}*/
+
+    
+
+
+@media screen and (max-width: 1100px) {
+    .aside-leftCreations {
+        position: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 1280px) {
+    .photohaut, .photobas {
+        justify-content: center;
+        padding-left: 8em;
+}
+    
+}
+
+
+@media screen and (max-width: 1850px) {
+    .photohaut, .photobas {
+        justify-content: center;
+        padding-left: 6em;
+}
+    
+}
+
+
+@media screen and (max-width: 1500px) {
+    .photohaut, .photobas {
+        justify-content: center;
+        padding-left: 8em;
+}
+    
 }

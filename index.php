@@ -11,8 +11,8 @@
         <header class="header">
             
             
-             <h1 class="titre">Sur Mon Portfolio</h1>
-            <h1 class="titre">Bienvenue</h1>
+             <p><h1 class="titre2">Sur Mon Portfolio</h1></p>
+        <p><h1 class="titre">Bienvenue</h1></p>
             
             
           
