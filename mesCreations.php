@@ -70,37 +70,50 @@
         
 
 <main class="warpper">
-            
+    
+    <section class="flex-container">
+        <div class="flex-item"><a class="hvr-float-shadow" href="../DossierCV/cvthibaud.php"><img class="photoCreation" src="images/ecrancv.png" alt="cv"></a></div>
+        <div class="flex-item"><a class="hvr-float-shadow" href="../travailA5/accueil/accueil.php"><img class="photoCreation" src="images/ecransitedev.png" alt="site developont"></a></div>
+        <div class="flex-item"><a class="hvr-float-shadow" href="../Table3/www/index.php"><img class="photoCreation" src="images/ecranreseausocial.png" alt="site reseau social"></a></div>
+    </section>
+    
+    <section class="flex-container">
+        <div class="flex-item"><a class="hvr-float-shadow" href="../Siteweb/dossierprincipal.php"><img class="photoCreation" src="images/ecransiteperso.png" alt="site perso"></a></div>
+        <div class="flex-item"><a class="hvr-float-shadow" href="../moteurrecherchemusiques/index.html"><img class="photoCreation" src="images/photositemusique1.png" alt="site musique"></a></div>
+    </section>
+    
+    
+    <!--
     <div class="photohaut"> 
-	<section><p><a class="hvr-float-shadow"
+	<section class="sectionWarpper"><a class="hvr-float-shadow"
                    href="../DossierCV/cvthibaud.php">
                    <img class="photocv" src="images/ecrancv.png" alt="cv"/>
-    </a></p></section>
+    </a></section>
 
-	<section><p><a class="hvr-float-shadow" href="../travailA5/accueil/accueil.php">
+	<section><a class="hvr-float-shadow" href="../travailA5/accueil/accueil.php">
                     <img class="photodev" src="images/ecransitedev.png" alt="site developont"/>
-	</a></p></section>
+	</a></section>
     </div>
 
     <div class="photobas">
-	<section><p><a class="hvr-float-shadow"
+	<section><a class="hvr-float-shadow"
                    href="../Siteweb/dossierprincipal.php">
                     <img class="photositeperso" src="images/ecransiteperso.png" alt="site perso"/>
-	</a></p></section>
+	</a></section>
 
-    <section><p><a class="hvr-float-shadow"
+    <section><a class="hvr-float-shadow"
                    href="../Table3/www/index.php">
                     <img class="photoreseau" src="images/ecranreseausocial.png" alt="site reseau social"/>
-    </a></p></section>
+    </a></section>
     </div>
     
     <div class="photoBas2">
-	<section><p><a class="hvr-float-shadow"
+	<section><a class="hvr-float-shadow"
                    href="../moteurrecherchemusiques/index.html">
                     <img class="photositemusique" src="images/photositemusique1.png" alt="site musique"/>
-	</a></p></section>
+	</a></section>
         
-    </div>
+    </div> -->
             
         </main>
         
