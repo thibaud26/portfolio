@@ -253,7 +253,7 @@ a:link {
 
 .competences {
     display: flex;
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: left;
 }
 
@@ -490,6 +490,7 @@ footer {
     width: 100%;
     flex-direction: column;
     z-index: 999;
+    text-align: center;
 } 
 
 
@@ -547,6 +548,10 @@ footer p {
     #menu {
         padding-left: 10%;
         width: 100%;
+    }
+    
+    .flex-item {
+        margin: 10%;
     }
     
 }
