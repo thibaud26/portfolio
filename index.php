@@ -10,8 +10,8 @@
         
         <header class="header">
             
-        
-        <h1 class="titre2">Sur Mon Portfolio</h1>
+        <h1 class="titre3">Portfolio</h1>
+        <h1 class="titre2">Sur Mon</h1>
         <h1 class="titre">Bienvenue</h1>
             
             
