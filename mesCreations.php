@@ -67,6 +67,42 @@
 </section>
 </aside>
 
+    
+         <!-- CREATIONS 
+    <section class="main style2 primary">
+        <div class="content">
+            <header>
+                <h2>Mes Créations</h2>
+                <p>Faite Seule Ou En Equipe</p>
+            </header>
+
+            <!-- Gallery  
+            <div id="crea" class="gallery">
+                <article class="gauche">
+                    <a href="../DossierCV/cvthibaud.php" class="image fit" target="_blank">
+                        <img class="photoreseau" src="images/ecrancv.png" alt="So Mum" />
+                    </a>
+                </article>
+                <article class="droite">
+                    <a href="../travailA5/accueil/accueil.php" class="image fit" target="_blank">
+                        <img class="photodev" src="images/ecransitedev.png" alt="site developont" />
+                    </a>
+                </article>
+                <article class="gauche">
+                    <a href="../moteurrecherchemusiques/index.html" class="image fit" target="_blank">
+                        <img class="photomusique" src="images/photositemusique1.png" alt="site developont" /></a>
+                </article>
+                <article class="droite">
+                    <a href="../Table3/www/index.php" class="image fit" target="_blank"><img src="images/ecranreseausocial.png" /></a>
+                </article>
+                <article class="gauche">
+                    <a href="../Siteweb/dossierprincipal.php" class="image fit" target="_blank">
+                        <img class="photomusique" src="images/ecransiteperso.png" alt="site developont" /></a>
+                </article>
+            </div>
+
+        </div>
+    </section>-->
         
 
 <main class="warpper">
