@@ -8,16 +8,86 @@
     <body>
     
             <header class="header">
+                
+                <nav>
+                            <?php include ('menu.html'); ?>
+                        </nav>
+            
+            <h1 class="titre">Mes Créations</h1>
+          
+            </header>
+        
+        <article>
+        
+<div class="containerMesCreations">  
+  <div class="flexMesCreations">
+    <div class="hvr-float-shadow"><a href="../DossierCV/cvthibaud.php" target="_blank"><img class="photoCreation" src="images/ecrancv.png" alt="cv"></a></div>
+    <div class="hvr-float-shadow"><a href="../travailA5/accueil/accueil.php" target="_blank"><img class="photoCreation" src="images/ecransitedev.png" alt="site developont"></a></div>
+    <div class="hvr-float-shadow"><a href="../Table3/www/index.php" target="_blank"><img class="photoCreation" src="images/ecranreseausocial.png" alt="site reseau social"></a></div>
+  </div>
+            </div>
+    </article>
+        
+        <article>
+<div class="containerMesCreations">  
+  <div class="flexMesCreations">
+    <div class="hvr-float-shadow"><a href="../Siteweb/dossierprincipal.php" target="_blank"><img class="photoCreation" src="images/ecransiteperso.png" alt="site perso"></a></div>
+    <div class="hvr-float-shadow"><a href="../moteurrecherchemusiques/index.html" target="_blank"><img class="photoCreation" src="images/photositemusique1.png" alt="site musique"></a></div>
+  </div>
+            </div>
+    </article>
+        
+        
+  <footer>
+            <?php include ('footer.php'); ?>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <php include ('head.html'); ?>
+        <title>PORTFOLIO Thibaud Bousquainaud</title>
+    </head>
+    <body>
+    
+            <header class="header">
             
             <h1 class="titre">Portfolio</h1>
             
                         <nav>
-                            <?php include ('menu.html'); ?>
+                            <php include ('menu.html'); ?>
                         </nav>
           
             </header>
         
-<aside class="aside-leftCreations">  
+        
+        
+<nav class="aside-leftCreations">  
     
     <header>
         
@@ -32,7 +102,7 @@
                     
     </header>
     
-<section>
+<div id="main">
 
 
         <h3 class="h3competences">Compétences : </h3>
@@ -64,8 +134,8 @@
 
                  </div>
 
-</section>
-</aside>
+</div>
+</nav>
 
     
          <!-- CREATIONS 
@@ -104,18 +174,18 @@
         </div>
     </section>-->
         
-
+<!--
 <main class="warpper">
     
     <section class="flex-container">
-        <div class="flex-item"><a class="hvr-float-shadow" href="../DossierCV/cvthibaud.php"><img class="photoCreation" src="images/ecrancv.png" alt="cv"></a></div>
-        <div class="flex-item"><a class="hvr-float-shadow" href="../travailA5/accueil/accueil.php"><img class="photoCreation" src="images/ecransitedev.png" alt="site developont"></a></div>
-        <div class="flex-item"><a class="hvr-float-shadow" href="../Table3/www/index.php"><img class="photoCreation" src="images/ecranreseausocial.png" alt="site reseau social"></a></div>
+        <div class="flex-item"><a href="../DossierCV/cvthibaud.php"><img class="photoCreation" src="images/ecrancv.png" alt="cv"></a></div>
+        <div class="flex-item"><a href="../travailA5/accueil/accueil.php"><img class="photoCreation" src="images/ecransitedev.png" alt="site developont"></a></div>
+        <div class="flex-item"><a href="../Table3/www/index.php"><img class="photoCreation" src="images/ecranreseausocial.png" alt="site reseau social"></a></div>
     </section>
     
     <section class="flex-container">
-        <div class="flex-item"><a class="hvr-float-shadow" href="../Siteweb/dossierprincipal.php"><img class="photoCreation" src="images/ecransiteperso.png" alt="site perso"></a></div>
-        <div class="flex-item"><a class="hvr-float-shadow" href="../moteurrecherchemusiques/index.html"><img class="photoCreation" src="images/photositemusique1.png" alt="site musique"></a></div>
+        <div class="flex-item"><a href="../Siteweb/dossierprincipal.php"><img class="photoCreation" src="images/ecransiteperso.png" alt="site perso"></a></div>
+        <div class="flex-item"><a href="../moteurrecherchemusiques/index.html"><img class="photoCreation" src="images/photositemusique1.png" alt="site musique"></a></div>
     </section>
     
     
@@ -151,10 +221,10 @@
         
     </div> -->
             
-        </main>
+     <!--   </main>
         
         <footer>
-            <?php include ('footer.php'); ?>
+            <php include ('footer.php'); ?>
         </footer>
         
     </body>

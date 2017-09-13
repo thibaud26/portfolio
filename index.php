@@ -1,8 +1,90 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="fr">
 
     <head>
         <?php include ('head.html'); ?>
+        <title>PORTFOLIO Thibaud Bousquainaud</title>
+    </head>
+    <body>
+    
+            <header class="header">
+                
+                <nav>
+                            <?php include ('menu.html'); ?>
+                        </nav>
+            
+            <h1 class="titre">Bienvenue Sur Mon Portfolio</h1>
+          
+            </header>
+
+<div class="container">
+  
+  <section class="main">
+    <h1>En Cours De Construction</h1>
+  </section>
+  
+ 
+ 
+    <aside class="side-content">
+        
+            <header>
+                <img class="photo" src="images/Thib.png" alt="photo">
+                <section class="prenom">
+                <h1>Thibaud</h1>
+                <h1>Bousquainaud</h1>
+                </section> 
+                <br> 
+                <br>
+            </header>
+            
+            <section><p>"Actuellement En Formation Avec Develo'pont, Par Simplon.co, Labelisée Grande École Du Numerique." </p></section>
+        
+        </aside>
+  
+  
+  
+</div>
+
+		<footer>
+            <?php include ('footer.php'); ?>
+        </footer>
+
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <php include ('head.html'); ?>
         <title>PORTFOLIO Thibaud Bousquainaud</title>
     </head>
     
@@ -17,7 +99,7 @@
             
           
                         <nav>
-                            <?php include ('menu.html'); ?>
+                            <php include ('menu.html'); ?>
                         </nav>
           
         </header>
@@ -46,7 +128,7 @@
    
         
         <footer>
-            <?php include ('footer.php'); ?>
+            <php include ('footer.php'); ?>
         </footer>
         
     </body>

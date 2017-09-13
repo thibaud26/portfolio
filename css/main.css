@@ -12,8 +12,9 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -23,26 +24,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-    background-image: url(../images/fondecran2.jpeg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* max-width: 2000px; */
-    /* min-width: 300px; */
-    /* line-height: 1; */
-    /* font-size: 1em; */
-    height: auto;
-    width: 100%;
-    margin: 0 auto;
-    /* padding: 0; */
-    min-height: 100%;
-    color: white;
-    position: absolute;
+	line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -61,9 +48,465 @@ table {
 }
 
 
+
 /* fin du reset = structure de base du css */
 
 
+body {    
+    background-image: url(../images/fondecran2.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-bottom: 8em;
+}
+
+
+
+/*************** INDEX ********************/
+
+.titre {
+    font-size: 4em;
+    margin-top: 2%;
+}
+
+
+h1 {
+  font-weight: 100;
+}
+
+header {
+  background-color: black;
+  color: #f4f4f4;
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 11px;
+  text-align: center;
+  
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto 30px;
+  
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+}
+
+
+.main {
+  background-color: black;
+  height: 500px;
+  padding: 20px;
+  margin-right: 20px;
+  color: #f4f4f4;
+  text-align: center;
+    opacity: 0.9;
+  
+  -webkit-flex: 7;
+  -moz-flex: 7;
+  flex: 7;
+  
+  -webkit-order: 0;
+  -moz-order: 0;
+  order: 0;
+}
+.side-content {
+  background-color: #ccc;
+  height: 50px;
+  
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+    
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  
+  -webkit-flex: 3;
+  -moz-flex: 3;
+  flex: 3;
+  
+  -webkit-order: 1;
+  -moz-order: 1;
+  order: 1;
+}
+.side-content > section {
+  background-color: #230909;
+  text-align: center;
+    width: 118%;
+  
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+}
+.side-content > section:first-child {
+  margin-top: 20px;
+}
+
+
+
+@media all and (max-width: 480px) {
+  .container {    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .main {
+    margin-right: 0;
+    
+    -webkit-order: 1;
+    -moz-order: 1;
+    order: 1;
+  }
+  
+  .side-content {
+    -webkit-order: 0;
+    -moz-order: 0;
+    order: 0;
+  }
+  
+}
+
+.photo {
+    width: 16em;
+    border-radius: 4em;
+    border: 1px solid black;
+}
+
+/*************** Fin INDEX ********************/
+
+
+
+
+/************************** MENU ***************************/
+
+#menu {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#onglets {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+
+/* Buzz */
+
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    padding-right: 2em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 900;
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/************************** FIN MENU ***************************/
+
+
+
+
+
+/*************** MES CREATIONS ********************/
+
+
+
+@import "compass/css3";
+
+.yep {
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+
+.containerMesCreations {
+  display: -webkit-flex;
+  justify-content: center;
+  background: $blue;
+}
+
+.flexMesCreations
+   {
+      /* basic styling */
+      
+      width: 100%;
+      height: auto;
+      font: 14px 'Georgia';
+ 
+      /* flexbox setup */
+      display: -webkit-flex;
+      flex-flow: row nowrap; 
+ 
+      display: -moz-flex;
+ 
+      display: flex;
+      text-align: center;
+   }
+ 
+
+.photoCreation {
+    margin: 25px;
+    width: 70%;
+}
+
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+                                /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+
+
+
+/*************** Fin MES CREATIONS ********************/
+
+
+
+footer { 
+    align-items: center;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clear: both;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+
+/****************** A Propos *******************/
+
+
+
+.textAPropos {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-weight: bold;
+    max-width: 300px;
+    letter-spacing: 2px;
+    background-color: black;
+    opacity: 0.9;    
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.aPropos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.prenomAPropos {
+    font-size: 3em;
+    font-weight: 900;
+    margin: 1.5em;
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+.devAPropos {
+    font-size: 2em;
+    font-weight: 300;
+    font-style: oblique;
+    margin: 7px;
+}
+
+
+
+/****************** Fin A Propos *******************/
+
+
+
+
+.logoFooter {
+    width: 1.5em;
+    flex-direction: row;
+    margin-left: 60%;
+}
+
+.footerLiens {
+    display: flex;
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* reset = structure de base du css *//*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers *//*
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* fin du reset = structure de base du css */
+
+/*
 .titre {
     font-family: "Monoton",cursive;
     font-size: 6em;
@@ -101,7 +544,7 @@ table {
 
 
 /************************** MENU ***************************/
-
+/*
 #menu {
     display: flex;
 }
@@ -114,6 +557,7 @@ table {
 
 
 /* Buzz */
+/*
 @-webkit-keyframes hvr-buzz {
   50% {
     -webkit-transform: translateX(3px) rotate(2deg);
@@ -155,7 +599,7 @@ table {
 
 /************************** FIN MENU ***************************/
 
-
+/*
 a:visited {
     color: gray;
 }
@@ -228,7 +672,7 @@ a:link {
 
 
         /* barre de progression */
-
+/*
 .h3competences {
     display: flex;
     font-size: 2em;
@@ -276,9 +720,9 @@ progress::-moz-progress-bar {
 
         /* fin de barre de progression */
 
-
+/*
 .aside-leftCreations {
-    float: left; /* sa colle le aside directmeent a gauche */
+    float: left; /* sa colle le aside directmeent a gauche *//*
     background: black none repeat scroll 0 0;
     display: flex;
     flex-flow: column nowrap;
@@ -464,9 +908,9 @@ progress::-moz-progress-bar {
 /****************** Fin Float Shadow *******************/
 
 
-
+/*
 .aside-left {
-    float: left; /* sa colle le aside directmeent a gauche */
+    float: left; /* sa colle le aside directmeent a gauche *//*
     background: black none repeat scroll 0 0;
     display: flex;
     flex-flow: column nowrap;
@@ -500,7 +944,7 @@ progress::-moz-progress-bar {
 
 /****************** A Propos *******************/
 
-
+/*
 .photoAPropos{
     width: 20em;
     display: flex;
@@ -555,7 +999,7 @@ progress::-moz-progress-bar {
 /******************  Contact *******************/
 
 
-
+/*
 .textContact {
     background-color: black;
     display: flex;
@@ -572,7 +1016,7 @@ progress::-moz-progress-bar {
 
 
 /******************  Fin Contact *******************/
-
+/*
 footer {
     background-color: black;
     bottom: 0;
@@ -617,7 +1061,7 @@ footer p {
 
     
 
-
+/*
 @media screen and (max-width: 1100px) {
     .aside-leftCreations {
         position: none;
