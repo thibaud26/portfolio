@@ -14,7 +14,6 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -221,7 +220,7 @@ a:link {
     background-size: cover;
     display: flex;
     flex-flow: column nowrap;
-    font-size: 200%;
+    font-size: 100%;
     text-align: right;;
     margin-bottom: 5%;
     padding: 6%;
@@ -381,7 +380,7 @@ progress::-moz-progress-bar {
     position: absolute;
     text-align: center;
     top: 0;
-    z-index: 999;
+    z-index: 998;
 }
 
 
@@ -491,6 +490,7 @@ footer {
     right: 0;
     width: 100%;
     flex-direction: column;
+    z-index: 999;
 } 
 
 
@@ -542,7 +542,7 @@ footer p {
     
     .titre, .titre2, .titre3 {
         
-        max-width: 30%;
+        max-width: 35%;
     }
     
     #menu {
