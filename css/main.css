@@ -88,13 +88,7 @@ header {
 .container {
   max-width: 1140px;
   margin: 0 auto 30px;
-  
-  display: -webkit-flex;
-  display: -moz-flex;
   display: flex;
-  
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
   flex-direction: row;
 }
 
@@ -106,43 +100,22 @@ header {
   margin-right: 20px;
   color: #f4f4f4;
   text-align: center;
-    opacity: 0.9;
-  
-  -webkit-flex: 7;
-  -moz-flex: 7;
+  opacity: 0.9;
   flex: 7;
-  
-  -webkit-order: 0;
-  -moz-order: 0;
   order: 0;
 }
 .side-content {
   background-color: #ccc;
   height: 50px;
-  
-  display: -webkit-flex;
-  display: -moz-flex;
   display: flex;
-    
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
   flex-direction: column;
-  
-  -webkit-flex: 3;
-  -moz-flex: 3;
   flex: 3;
-  
-  -webkit-order: 1;
-  -moz-order: 1;
   order: 1;
 }
 .side-content > section {
   background-color: #230909;
   text-align: center;
-    width: 118%;
-  
-  -webkit-flex: 1;
-  -moz-flex: 1;
+  width: 118%;
   flex: 1;
 }
 .side-content > section:first-child {
@@ -153,26 +126,16 @@ header {
 
 @media all and (max-width: 480px) {
   .container {    
-    display: -webkit-flex;
-    display: -moz-flex;
     display: flex;
-    
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
     flex-direction: column;
   }
   
   .main {
     margin-right: 0;
-    
-    -webkit-order: 1;
-    -moz-order: 1;
     order: 1;
   }
   
   .side-content {
-    -webkit-order: 0;
-    -moz-order: 0;
     order: 0;
   }
   
@@ -183,6 +146,39 @@ header {
     border-radius: 4em;
     border: 1px solid black;
 }
+
+/***** Sliders *****/
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+
+
+
+/***** FIN Sliders *****/
+
 
 /*************** Fin INDEX ********************/
 
@@ -270,9 +266,8 @@ header {
 
 
 .containerMesCreations {
-  display: -webkit-flex;
+  display: flex;
   justify-content: center;
-  background: $blue;
 }
 
 .flexMesCreations
@@ -284,12 +279,8 @@ header {
       font: 14px 'Georgia';
  
       /* flexbox setup */
-      display: -webkit-flex;
-      flex-flow: row nowrap; 
- 
-      display: -moz-flex;
- 
       display: flex;
+      flex-flow: row nowrap; 
       text-align: center;
    }
  
@@ -339,22 +330,6 @@ header {
 
 /*************** Fin MES CREATIONS ********************/
 
-
-
-footer { 
-    align-items: center;
-    background-color: black;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    clear: both;
-    display: flex;
-    height: 100px;
-    justify-content: center;
-    opacity: 0.9;
-    position: fixed;
-    width: 100%;
-}
 
 
 
@@ -407,6 +382,8 @@ footer {
 
 
 
+/****************** Footer *******************/
+
 .logoFooter {
     width: 1.5em;
     flex-direction: row;
@@ -420,12 +397,24 @@ footer {
 
 
 
+footer { 
+    align-items: center;
+    background-color: black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clear: both;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+}
 
 
 
-
-
-
+/****************** Fin Footer *******************/
 
 
 

@@ -20,7 +20,26 @@
 <div class="container">
   
   <section class="main">
-    <h1>En Cours De Construction</h1>
+      
+      <h3>Cliquez Pour plus d'information.</h3>
+      <br>
+      <br>
+    
+<div id="slider">
+    
+<figure>
+    <a href="http://developont.fr/~thibaud/portfolio/aPropos.php" target="_blank"><img src="images/fondecran1.jpeg" alt="image thibaud"></a>
+    
+    <a href="http://developont.fr/~thibaud/DossierCV/cvthibaud.php" target="_blank"><img src="images/ecrancv.png" alt="cv imprimable">
+    </a>
+    
+    <a href="http://www.scroyans.fr/" target="_blank"><img src="images/thibaudrugby.jpg" alt="équipe sénior scr"></a>
+    
+    <a href="http://developont.fr/accueil/accueil.php" target="_blank"><img src="images/ecransitedev.png" alt="capture ecran site developont"></a>
+    
+</figure>
+</div>
+      
   </section>
   
  
