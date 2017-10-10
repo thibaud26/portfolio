@@ -175,7 +175,9 @@ div#slider figure {
 }
 
 
-
+.figureSlide {
+    font-size: 40px;
+}
 
 /***** FIN Sliders *****/
 
@@ -336,6 +338,29 @@ div#slider figure {
 
 /****************** A Propos *******************/
 
+/*
+
+
+.sectionApropos{
+    animation: 1.5s ease 0s normal none 1 running fadein;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+
+.articleApropos {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-left: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.4);
+    margin-bottom: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: justify;
+}
+
 
 
 .textAPropos {
@@ -375,7 +400,58 @@ div#slider figure {
     margin: 7px;
 }
 
+.formulaire {
+    display: flex;
+    flex-flow: column wrap;
+}
 
+.formulaire p {
+    width: 300px;
+    clear: left;
+    margin: 0;
+    padding-left: 155px;
+    border-top: 1px dashed gray;
+    height: 1%
+}
+
+.formulaire label {
+    font-weight: bold;
+    float: left;
+    margin-left: -155px;
+    width: 150px;
+}
+
+.formulaire input {
+    width: 180px;
+}
+
+.formulaire textarea {
+    width: 250px;
+    height: 150px;
+}
+
+.articleContact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.sectionContact {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.msgContact {
+    color: #ed1450;
+    font-weight: 900;
+}
+
+.sectionContactMap {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+*/
 
 /****************** Fin A Propos *******************/
 
